@@ -29,17 +29,3 @@ Este repositório servirá como um local central para documentar todo o processo
 <p><a href="https://github.com/mjuliamenezes">Maria Júlia Menezes</a> | mjotm@cesar.school</p>
 <p><a href="https://github.com/Malucoimbr">Maria Luísa Coimbra</a> | mlcl@cesar.school</p>
 <p><a href="https://github.com/Tiagopbc">Tiago Cavalcanti</a> | tpbc@cesar.school</p>
-
-
-<h3>Designers:</h3>
-
-
-<p>Beatriz Campos | bcds@cesar.school</p>
-<p>Felipe Ferrari | fcf2@cesar.school</p>
-<p>Fernanda Dantas | fod@cesar.school</p>
-<p>Laís Cassimiro | lmc3@cesar.school</p>
-<p>Luciana Modesto | lom@cesar.school</p>
-<p>Matheus Correia | mfvc@cesar.school</p>
-
-
-<h2>Status Report 1 📦</h2>
