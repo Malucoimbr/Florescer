@@ -3,7 +3,7 @@
 >Nos unimos com o propósito de solucionar uma problemática de um cliente real (A ONG Gotas de Flor Com Amor) por meio de uma solução tecnológica (O Florescer). 
 >Com isso, criamos este repositório com o fim de documentar todo o nosso processo durante o projeto.
 
-<h2>Colaboradores</h2>
+<h2>Desenvolvedores</h2>
 
 <p><a href="https://github.com/Henrique-12345">Henrique Magalhães</a> | hlm2@cesar.school</p>
 <p><a href="https://github.com/igorfwds">Igor Wanderley</a> | Ifws@cesar.school</p>
