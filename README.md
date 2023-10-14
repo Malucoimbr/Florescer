@@ -18,32 +18,26 @@ Este repositório servirá como um local central para documentar todo o processo
 
 <h2>Colaboradores</h2>
 
-<div style= "display: flex; gap: 20px;">
-<div>
-    <h3>Desenvolvedores:</h3>
+<h3>Desenvolvedores:</h3>
     
-    
-    <p><a href="https://github.com/Henrique-12345">Henrique Magalhães</a> | hlm2@cesar.school</p>
-    <p><a href="https://github.com/igorfwds">Igor Wanderley</a> | Ifws@cesar.school</p>
-    <p><a href="https://github.com/JoaovfGoncalves">João Victor Ferraz</a> | jvfg@cesar.school</p>
-    <p><a href="https://github.com/mjuliamenezes">Maria Júlia Menezes</a> | mjotm@cesar.school</p>
-    <p><a href="https://github.com/Malucoimbr">Maria Luísa Coimbra</a> | mlcl@cesar.school</p>
-    <p><a href="https://github.com/Tiagopbc">Tiago Cavalcanti</a> | tpbc@cesar.school</p>
 
-</div>
+<p><a href="https://github.com/Henrique-12345">Henrique Magalhães</a> | hlm2@cesar.school</p>
+<p><a href="https://github.com/igorfwds">Igor Wanderley</a> | Ifws@cesar.school</p>
+<p><a href="https://github.com/JoaovfGoncalves">João Victor Ferraz</a> | jvfg@cesar.school</p>
+<p><a href="https://github.com/mjuliamenezes">Maria Júlia Menezes</a> | mjotm@cesar.school</p>
+<p><a href="https://github.com/Malucoimbr">Maria Luísa Coimbra</a> | mlcl@cesar.school</p>
+<p><a href="https://github.com/Tiagopbc">Tiago Cavalcanti</a> | tpbc@cesar.school</p>
 
 
-<div>
-    <h3>Designers:</h3>
-    
-    
-    <p>Beatriz Campos | bcds@cesar.school</p>
-    <p>Felipe Ferrari | fcf2@cesar.school</p>
-    <p>Fernanda Dantas | fod@cesar.school</p>
-    <p>Laís Cassimiro | lmc3@cesar.school</p>
-    <p>Luciana Modesto | lom@cesar.school</p>
-    <p>Matheus Correia | mfvc@cesar.school</p>
-</div>
-</div>
+<h3>Designers:</h3>
+
+
+<p>Beatriz Campos | bcds@cesar.school</p>
+<p>Felipe Ferrari | fcf2@cesar.school</p>
+<p>Fernanda Dantas | fod@cesar.school</p>
+<p>Laís Cassimiro | lmc3@cesar.school</p>
+<p>Luciana Modesto | lom@cesar.school</p>
+<p>Matheus Correia | mfvc@cesar.school</p>
+
 
 <h2>Status Report 1 📦</h2>
