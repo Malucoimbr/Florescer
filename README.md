@@ -4,7 +4,7 @@
 
 > Este é um projeto colaborativo realizado por alunos da CESAR School, com formações em Ciência da Computação e Design. Nos unimos com o propósito de solucionar uma problemática de um cliente real, a ONG Gotas de Flor Com Amor, por meio de uma solução tecnológica chamada "Florescer".
 
-Nossa missão é criar um sistema de gerenciamento que atenderá às necessidades da ONG, tornando o seu trabalho mais eficiente e eficaz. Florescer é a nossa resposta para apoiar a ONG Gotas de Flor Com Amor em sua nobre missão.
+>Nossa missão é criar um sistema de gerenciamento que atenderá às necessidades da ONG, tornando o seu trabalho mais eficiente e eficaz. Florescer é a nossa resposta para apoiar a ONG Gotas de Flor Com Amor em sua nobre missão.
 
 ### Tecnologias Utilizadas
 
@@ -29,3 +29,17 @@ Este repositório servirá como um local central para documentar todo o processo
 <p><a href="https://github.com/mjuliamenezes">Maria Júlia Menezes</a> | mjotm@cesar.school</p>
 <p><a href="https://github.com/Malucoimbr">Maria Luísa Coimbra</a> | mlcl@cesar.school</p>
 <p><a href="https://github.com/Tiagopbc">Tiago Cavalcanti</a> | tpbc@cesar.school</p>
+
+
+<h3>Designers:</h3>
+
+
+<p>Beatriz Campos | bcds@cesar.school</p>
+<p>Felipe Ferrari | fcf2@cesar.school</p>
+<p>Fernanda Dantas | fod@cesar.school</p>
+<p>Laís Cassimiro | lmc3@cesar.school</p>
+<p>Luciana Modesto | lom@cesar.school</p>
+<p>Matheus Correia | mfvc@cesar.school</p>
+
+
+<h2>Status Report 1 📦</h2>
