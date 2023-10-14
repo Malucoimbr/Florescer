@@ -18,7 +18,7 @@ Este repositório servirá como um local central para documentar todo o processo
 
 <h2>Colaboradores</h2>
 
-<div style= "flex">
+<div style= "display: flex; gap: 20px;">
 <div>
     <h3>Desenvolvedores:</h3>
     
