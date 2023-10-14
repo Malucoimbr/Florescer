@@ -20,7 +20,7 @@ Este repositório servirá como um local central para documentar todo o processo
 <h2>Colaboradores</h2>
 
 
-<h3>Ciência da Computação:</h3>
+<h3>Desenvolvedores:</h3>
 
 
 <p><a href="https://github.com/Henrique-12345">Henrique Magalhães</a> | hlm2@cesar.school</p>
@@ -31,7 +31,7 @@ Este repositório servirá como um local central para documentar todo o processo
 <p><a href="https://github.com/Tiagopbc">Tiago Cavalcanti</a> | tpbc@cesar.school</p>
 
 
-<h3>Design:</h3>
+<h3>Designers:</h3>
 
 
 <p>Beatriz Campos | bcds@cesar.school</p>
@@ -40,3 +40,6 @@ Este repositório servirá como um local central para documentar todo o processo
 <p>Laís Cassimiro | lmc3@cesar.school</p>
 <p>Luciana Modesto | lom@cesar.school</p>
 <p>Matheus Correia | mfvc@cesar.school</p>
+
+
+<h2>Status Report 1 📦</h2>
