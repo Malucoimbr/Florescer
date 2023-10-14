@@ -41,3 +41,11 @@ Este repositório servirá como um local central para documentar todo o processo
 
 
 <h2>Status Report 1 📦</h2>
+
+<h3>Relato do Pair Programming</h3>
+
+<p>A realização do Pair Programming se deu da seguinte maneira:
+
+Igor Wanderley e Maria Luísa Coimbra  ficaram a cargo de desenvolver e implementar a história de "Cadastrar Crianças", enquanto Maria Júlia Menezes  e Tiago Cavalcanti desenvolveram as maneiras de listagem e implementação da história "Listar Crianças".
+
+As adaptações e comunicações das views, models e urls com o html e o CSS foi feito em pair programming entre Henrique Lucena e João Victor Ferraz alternando entre piloto e copitolo ao longo do processo.</p>
