@@ -11,3 +11,6 @@
 <p><a href="https://github.com/mjuliamenezes">Maria Júlia Menezes</a> | mjotm@cesar.school</p>
 <p><a href="https://github.com/Malucoimbr">Maria Luísa Coimbra </a> | mlcl@cesar.school</p>
 <p><a href="https://github.com/Tiagopbc">Tiago Cavalcanti</a> | tpbc@cesar.school</p>
+
+<h2>Status Report 1 📦</h2>
+
