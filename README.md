@@ -12,7 +12,7 @@
 - **Banco de Dados SQLite:** Para garantir a segurança e a confiabilidade dos dados, estamos utilizando o banco de dados SQLite como nossa escolha inicial. Ele oferece uma solução leve e de fácil configuração, ideal para o estágio inicial do desenvolvimento.
 
 ### Links 
-- Jira: https://malu123.atlassian.net/jira/software/projects/FLORESCER/boards/2
+[**Jira**](https://malu123.atlassian.net/jira/software/projects/FLORESCER/boards/2)
 
 ### Objetivos do Repositório
 
