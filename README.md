@@ -11,6 +11,9 @@
 
 - **Banco de Dados SQLite:** Para garantir a segurança e a confiabilidade dos dados, estamos utilizando o banco de dados SQLite como nossa escolha inicial. Ele oferece uma solução leve e de fácil configuração, ideal para o estágio inicial do desenvolvimento.
 
+### Links 
+- Jira: https://malu123.atlassian.net/jira/software/projects/FLORESCER/boards/2
+
 ### Objetivos do Repositório
 
 Este repositório servirá como um local central para documentar todo o processo de desenvolvimento do projeto Florescer. Aqui, serão encontradas informações detalhadas sobre o progresso, implementações, documentação técnica e outras informações relevantes.
