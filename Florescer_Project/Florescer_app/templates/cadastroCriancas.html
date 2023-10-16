@@ -7,7 +7,7 @@
 
 <head>
   <br /><br />
-  {% if cadastro %}
+  {% if submit %}
   O Cadastro foi bem sucedido!
 
   {% else %}
@@ -18,7 +18,7 @@
   <form action="" class="form-horizontal" method=POST>
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Cadastrar nova criança" class="btn btn-secondary">
+    <input type="submit" value="Cadastrar nova criança" class="btn btn-success">
     <!--<fieldset>
       <div class="panel panel-primary">
         <div class="panel-heading">Cadastro de Crianças</div>

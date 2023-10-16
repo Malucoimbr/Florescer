@@ -1,12 +1,18 @@
-<link
-  href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
-  rel="stylesheet"
-  id="bootstrap-css"
-/>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-<!DOCTYPE html>
+{% block content %}
+<center>
+  <h1>Crianças Cadastradas</h1>
+  <h3>
+    {% for crianca in lista_criancas %}
+    {{crianca}} -- {{crianca.sexo}} -- {{crianca.nome_responsavel}} -- {{crianca.email_resp}} -- {{crianca.telefone_resp}}<br />
+    {% endfor %}
+  </h3>
+</center>
+{% endblock %}
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -83,4 +89,4 @@
       <button class="buttonListar">Deseja cadastrar outra criança?</button>
     </div>
   </body>
-</html>
+</html> -->

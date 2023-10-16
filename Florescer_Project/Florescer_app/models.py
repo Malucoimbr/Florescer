@@ -3,7 +3,7 @@ from django.db import models
 class Crianca(models.Model):
     nome = models.CharField(max_length=50)
     sobrenome = models.CharField(max_length=120)
-    data_nascimento = models.DateTimeField()
+    data_nascimento = models.DateField()
     sexo = models.CharField(max_length=5)
     CEP = models.CharField(max_length=20)
     endereco = models.CharField(max_length=200)

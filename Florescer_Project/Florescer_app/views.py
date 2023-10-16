@@ -14,16 +14,17 @@ def cadastrarCriancas(request):
         form = CriancaForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/cadastroCriancas?cadastro=True')
+            return HttpResponseRedirect('/cadastroCriancas?submit=True')
     else:
         form = CriancaForm()
-        if 'cadastro' in request.GET:
+        if 'submit' in request.GET:
             submit = True
     return render(request, './cadastroCriancas.html', {'form': form, 'submit': submit})
 
 
 def ListarCriancas(request):
-    return render(request, './ListarCriancas.html')
+    lista_criancas = Crianca.objects.all()
+    return render(request, './ListarCriancas.html', {'lista_criancas': lista_criancas})
 
 
 def inicialAdmin(request):
