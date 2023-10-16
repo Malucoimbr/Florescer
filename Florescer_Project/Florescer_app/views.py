@@ -9,4 +9,8 @@ def cadastrarCriancas(request):
 def ListarCriancas(request):
     return render(request, './ListarCriancas.html')
 
+def inicialAdmin(request):
+    return render(request, './inicialAdmin.html')
+
+
 

@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Florescer Home Admin</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        color: #444444;
+      }
+
+      a {
+        color: #47b2e4;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #73c5eb;
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Jost", sans-serif;
+      }
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        overflow: hidden;
+        background: #37517e;
+      }
+
+      #preloader:before {
+        content: "";
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        border: 6px solid #37517e;
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: animate-preloader 1s linear infinite;
+      }
+
+      @keyframes animate-preloader {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .back-to-top {
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        right: 15px;
+        bottom: 15px;
+        z-index: 996;
+        background: #47b2e4;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        transition: all 0.4s;
+      }
+
+      .back-to-top i {
+        font-size: 24px;
+        color: #fff;
+        line-height: 0;
+      }
+
+      .back-to-top:hover {
+        background: #6bc1e9;
+        color: #fff;
+      }
+
+      .back-to-top.active {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+      #header {
+        transition: all 0.5s;
+        z-index: 997;
+        padding: 15px 0;
+        background: white;
+      }
+
+      #header.header-scrolled,
+      #header.header-inner-pages {
+        background: rgba(40, 58, 90, 0.9);
+      }
+
+      #header .logo {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      #header .logo a {
+        color: black;
+      }
+
+      #header .logo img {
+        max-height: 40px;
+      }
+
+      /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+      /**
+* Desktop Navigation 
+*/
+      .navbar {
+        padding: 0;
+      }
+
+      .navbar ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+      }
+
+      .navbar li {
+        position: relative;
+      }
+
+      .navbar a,
+      .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 10px 30px;
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        white-space: nowrap;
+        transition: 0.3s;
+      }
+
+      .navbar a i,
+      .navbar a:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+      }
+
+      .navbar a:hover,
+      .navbar .active,
+      .navbar .active:focus,
+      .navbar li:hover > a {
+        color: black;
+      }
+
+      .navbar .dropdown ul {
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: calc(100% + 30px);
+        margin: 0;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        /* background: #fff; */
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: 0.3s;
+        border-radius: 4px;
+      }
+
+      .navbar .dropdown ul li {
+        min-width: 200px;
+      }
+
+      .navbar .dropdown ul a {
+        padding: 10px 20px;
+        font-size: 14px;
+        text-transform: none;
+        font-weight: 500;
+        color: #0c3c53;
+      }
+
+      .navbar .dropdown ul a i {
+        font-size: 12px;
+      }
+
+      .navbar .dropdown ul a:hover,
+      .navbar .dropdown ul .active:hover,
+      .navbar .dropdown ul li:hover > a {
+        color: #47b2e4;
+      }
+
+      .navbar .dropdown:hover > ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+      }
+
+      .navbar .dropdown .dropdown ul {
+        top: 0;
+        left: calc(100% - 30px);
+        visibility: hidden;
+      }
+
+      .navbar .dropdown .dropdown:hover > ul {
+        opacity: 1;
+        top: 0;
+        left: 100%;
+        visibility: visible;
+      }
+
+      @media (max-width: 1366px) {
+        .navbar .dropdown .dropdown ul {
+          left: -90%;
+        }
+
+        .navbar .dropdown .dropdown:hover > ul {
+          left: -100%;
+        }
+      }
+
+      /**
+* Mobile Navigation 
+*/
+      .mobile-nav-toggle {
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+        display: none;
+        line-height: 0;
+        transition: 0.5s;
+      }
+
+      .mobile-nav-toggle.bi-x {
+        color: #fff;
+      }
+
+      @media (max-width: 991px) {
+        .mobile-nav-toggle {
+          display: block;
+        }
+
+        .navbar ul {
+          display: none;
+        }
+      }
+
+      .navbar-mobile {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(40, 58, 90, 0.9);
+        transition: 0.3s;
+        z-index: 999;
+      }
+
+      .navbar-mobile .mobile-nav-toggle {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+
+      .navbar-mobile ul {
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        padding: 10px 0;
+        border-radius: 10px;
+        /* background-color: #fff; */
+        overflow-y: auto;
+        transition: 0.3s;
+      }
+
+      .navbar-mobile a,
+      .navbar-mobile a:focus {
+        padding: 10px 20px;
+        font-size: 15px;
+        color: #37517e;
+      }
+
+      .navbar-mobile a:hover,
+      .navbar-mobile .active,
+      .navbar-mobile li:hover > a {
+        color: #47b2e4;
+      }
+
+      .navbar-mobile .getstarted,
+      .navbar-mobile .getstarted:focus {
+        margin: 15px;
+        color: #37517e;
+      }
+
+      .navbar-mobile .dropdown ul {
+        position: static;
+        display: none;
+        margin: 10px 20px;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 1;
+        visibility: visible;
+        background: #fff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+      }
+
+      .navbar-mobile .dropdown ul li {
+        min-width: 200px;
+      }
+
+      .navbar-mobile .dropdown ul a {
+        padding: 10px 20px;
+      }
+
+      .navbar-mobile .dropdown ul a i {
+        font-size: 12px;
+      }
+
+      .navbar-mobile .dropdown ul a:hover,
+      .navbar-mobile .dropdown ul .active:hover,
+      .navbar-mobile .dropdown ul li:hover > a {
+        color: #47b2e4;
+      }
+
+      .navbar-mobile .dropdown > .dropdown-active {
+        display: block;
+        visibility: visible !important;
+      }
+
+      /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+      section {
+        padding: 60px 0;
+        overflow: hidden;
+      }
+
+      .section-bg {
+        background-color: #f3f5fa;
+      }
+
+      .section-title {
+        text-align: center;
+        padding-bottom: 30px;
+      }
+
+      .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #37517e;
+      }
+
+      .section-title h2::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: #ddd;
+        bottom: 1px;
+        left: calc(50% - 60px);
+      }
+
+      .section-title h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: #47b2e4;
+        bottom: 0;
+        left: calc(50% - 20px);
+      }
+
+      .section-title p {
+        margin-bottom: 0;
+      }
+
+      /*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+      .about .content h3 {
+        font-weight: 600;
+        font-size: 26px;
+      }
+
+      .about .content ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .about .content ul li {
+        padding-left: 28px;
+        position: relative;
+      }
+
+      .about .content ul li + li {
+        margin-top: 10px;
+      }
+
+      .about .content ul i {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        font-size: 20px;
+        color: #47b2e4;
+        line-height: 1;
+      }
+
+      .about .content p:last-child {
+        margin-bottom: 0;
+      }
+
+      .about .content .btn-learn-more {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 32px;
+        border-radius: 4px;
+        transition: 0.3s;
+        line-height: 1;
+        color: #47b2e4;
+        animation-delay: 0.8s;
+        margin-top: 6px;
+        border: 2px solid #47b2e4;
+      }
+
+      .about .content .btn-learn-more:hover {
+        background: #47b2e4;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+      .services .icon-box {
+        box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+        padding: 50px 30px;
+        transition: all ease-in-out 0.4s;
+        background: #fff;
+      }
+
+      .services .icon-box .icon {
+        margin-bottom: 10px;
+      }
+
+      .services .icon-box .icon i {
+        color: #47b2e4;
+        font-size: 36px;
+        transition: 0.3s;
+      }
+
+      .services .icon-box h4 {
+        font-weight: 500;
+        margin-bottom: 15px;
+        font-size: 24px;
+      }
+
+      .services .icon-box h4 a {
+        color: #37517e;
+        transition: ease-in-out 0.3s;
+      }
+
+      .services .icon-box p {
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      .services .icon-box:hover {
+        transform: translateY(-10px);
+      }
+
+      .services .icon-box:hover h4 a {
+        color: #47b2e4;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto"><a href="index.html">Florescer</a></h1>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#inicio">Início</a></li>
+            <ul>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Crianças</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li class="dropdown">
+                    <li><a href="#">Cadastrar Crianças</a></li>
+                    <li><a href="#">Lista das Crianças</a></li>
+                </li>
+            </li>
+          </ul>
+          <li></li>
+          <ul>
+            <li class="dropdown">
+                <a href="#"
+                  ><span>Voluntários</span> <i class="bi bi-chevron-down"></i
+                ></a>
+                <ul>
+                  <li class="dropdown">
+                      <li><a href="#">Cadastrar Voluntários</a></li>
+                      <li><a href="#">Lista das Voluntários</a></li>
+                  </li>
+              </li>
+          </ul>
+
+
+          <li><a class="nav-link scrollto active" href="#financeiro">Financeiro</a></li>
+
+
+          <li><a class="nav-link scrollto active" href="#sair">Sair</a></li>
+      
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+   
+
+    <main id="main">
+
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Sobre Nós</h2>
+          </div>
+
+          <div class="row content">
+            <div class="col-lg-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul>
+                <li>
+                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> Duis aute irure dolor in
+                  reprehenderit in voluptate velit
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+              <a href="#" class="btn-learn-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Us Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Nossos Serviços</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">Lorem Ipsum</a></h4>
+                <p>
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Sed ut perspici</a></h4>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Magni Dolores</a></h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-layer"></i></div>
+                <h4><a href="">Nemo Enim</a></h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+    </main>
+    <!-- End #main -->
+
+   
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Template Main JS File -->
+    <script>
+      /**
+       * Template Name: Arsha
+       * Updated: Sep 18 2023 with Bootstrap v5.3.2
+       * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+       * Author: BootstrapMade.com
+       * License: https://bootstrapmade.com/license/
+       */
+      (function () {
+        "use strict";
+
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+          el = el.trim();
+          if (all) {
+            return [...document.querySelectorAll(el)];
+          } else {
+            return document.querySelector(el);
+          }
+        };
+
+        /**
+         * Easy event listener function
+         */
+        const on = (type, el, listener, all = false) => {
+          let selectEl = select(el, all);
+          if (selectEl) {
+            if (all) {
+              selectEl.forEach((e) => e.addEventListener(type, listener));
+            } else {
+              selectEl.addEventListener(type, listener);
+            }
+          }
+        };
+
+        /**
+         * Easy on scroll event listener
+         */
+        const onscroll = (el, listener) => {
+          el.addEventListener("scroll", listener);
+        };
+
+        /**
+         * Navbar links active state on scroll
+         */
+        let navbarlinks = select("#navbar .scrollto", true);
+        const navbarlinksActive = () => {
+          let position = window.scrollY + 200;
+          navbarlinks.forEach((navbarlink) => {
+            if (!navbarlink.hash) return;
+            let section = select(navbarlink.hash);
+            if (!section) return;
+            if (
+              position >= section.offsetTop &&
+              position <= section.offsetTop + section.offsetHeight
+            ) {
+              navbarlink.classList.add("active");
+            } else {
+              navbarlink.classList.remove("active");
+            }
+          });
+        };
+        window.addEventListener("load", navbarlinksActive);
+        onscroll(document, navbarlinksActive);
+
+        /**
+         * Scrolls to an element with header offset
+         */
+        const scrollto = (el) => {
+          let header = select("#header");
+          let offset = header.offsetHeight;
+
+          let elementPos = select(el).offsetTop;
+          window.scrollTo({
+            top: elementPos - offset,
+            behavior: "smooth",
+          });
+        };
+
+        /**
+         * Toggle .header-scrolled class to #header when page is scrolled
+         */
+        let selectHeader = select("#header");
+        if (selectHeader) {
+          const headerScrolled = () => {
+            if (window.scrollY > 100) {
+              selectHeader.classList.add("header-scrolled");
+            } else {
+              selectHeader.classList.remove("header-scrolled");
+            }
+          };
+          window.addEventListener("load", headerScrolled);
+          onscroll(document, headerScrolled);
+        }
+
+        /**
+         * Back to top button
+         */
+        let backtotop = select(".back-to-top");
+        if (backtotop) {
+          const toggleBacktotop = () => {
+            if (window.scrollY > 100) {
+              backtotop.classList.add("active");
+            } else {
+              backtotop.classList.remove("active");
+            }
+          };
+          window.addEventListener("load", toggleBacktotop);
+          onscroll(document, toggleBacktotop);
+        }
+
+        /**
+         * Mobile nav toggle
+         */
+        on("click", ".mobile-nav-toggle", function (e) {
+          select("#navbar").classList.toggle("navbar-mobile");
+          this.classList.toggle("bi-list");
+          this.classList.toggle("bi-x");
+        });
+
+        /**
+         * Mobile nav dropdowns activate
+         */
+        on(
+          "click",
+          ".navbar .dropdown > a",
+          function (e) {
+            if (select("#navbar").classList.contains("navbar-mobile")) {
+              e.preventDefault();
+              this.nextElementSibling.classList.toggle("dropdown-active");
+            }
+          },
+          true
+        );
+
+        /**
+         * Scrool with ofset on links with a class name .scrollto
+         */
+        on(
+          "click",
+          ".scrollto",
+          function (e) {
+            if (select(this.hash)) {
+              e.preventDefault();
+
+              let navbar = select("#navbar");
+              if (navbar.classList.contains("navbar-mobile")) {
+                navbar.classList.remove("navbar-mobile");
+                let navbarToggle = select(".mobile-nav-toggle");
+                navbarToggle.classList.toggle("bi-list");
+                navbarToggle.classList.toggle("bi-x");
+              }
+              scrollto(this.hash);
+            }
+          },
+          true
+        );
+
+        /**
+         * Scroll with ofset on page load with hash links in the url
+         */
+        window.addEventListener("load", () => {
+          if (window.location.hash) {
+            if (select(window.location.hash)) {
+              scrollto(window.location.hash);
+            }
+          }
+        });
+
+        /**
+         * Preloader
+         */
+        let preloader = select("#preloader");
+        if (preloader) {
+          window.addEventListener("load", () => {
+            preloader.remove();
+          });
+        }
+
+        /**
+         * Initiate  glightbox
+         */
+        const glightbox = GLightbox({
+          selector: ".glightbox",
+        });
+
+        /**
+         * Skills animation
+         */
+        let skilsContent = select(".skills-content");
+        if (skilsContent) {
+          new Waypoint({
+            element: skilsContent,
+            offset: "80%",
+            handler: function (direction) {
+              let progress = select(".progress .progress-bar", true);
+              progress.forEach((el) => {
+                el.style.width = el.getAttribute("aria-valuenow") + "%";
+              });
+            },
+          });
+        }
+
+        /**
+         * Porfolio isotope and filter
+         */
+        window.addEventListener("load", () => {
+          let portfolioContainer = select(".portfolio-container");
+          if (portfolioContainer) {
+            let portfolioIsotope = new Isotope(portfolioContainer, {
+              itemSelector: ".portfolio-item",
+            });
+
+            let portfolioFilters = select("#portfolio-flters li", true);
+
+            on(
+              "click",
+              "#portfolio-flters li",
+              function (e) {
+                e.preventDefault();
+                portfolioFilters.forEach(function (el) {
+                  el.classList.remove("filter-active");
+                });
+                this.classList.add("filter-active");
+
+                portfolioIsotope.arrange({
+                  filter: this.getAttribute("data-filter"),
+                });
+                portfolioIsotope.on("arrangeComplete", function () {
+                  AOS.refresh();
+                });
+              },
+              true
+            );
+          }
+        });
+
+        /**
+         * Initiate portfolio lightbox
+         */
+        const portfolioLightbox = GLightbox({
+          selector: ".portfolio-lightbox",
+        });
+
+        /**
+         * Portfolio details slider
+         */
+        new Swiper(".portfolio-details-slider", {
+          speed: 400,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: true,
+          },
+        });
+
+        /**
+         * Animation on scroll
+         */
+        window.addEventListener("load", () => {
+          AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            once: true,
+            mirror: false,
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
