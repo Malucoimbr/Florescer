@@ -3,4 +3,10 @@ from django.shortcuts import render
 def home (request):
     return render(request, './index.html')
 
-# Create your views here.
+def cadastrarCriancas(request):
+    return render(request, './cadastroCriancas.html')
+
+def ListarCriancas(request):
+    return render(request, './ListarCriancas.html')
+
+
