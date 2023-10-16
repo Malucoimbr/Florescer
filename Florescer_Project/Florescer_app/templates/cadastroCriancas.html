@@ -9,9 +9,10 @@
   <br /><br />
   {% if submit %}
   O Cadastro foi bem sucedido!
+  <button type="button" onclick="window.location.replace('/inicialAdmin')" class="btn btn-back">OK!</button>
 
   {% else %}
-
+  
 </head>
 
 <body>
@@ -19,6 +20,7 @@
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Cadastrar nova criança" class="btn btn-success">
+    <button type="button" onclick="window.location.replace('/inicialAdmin')" class="btn btn-back">Voltar</button>
     <!--<fieldset>
       <div class="panel panel-primary">
         <div class="panel-heading">Cadastro de Crianças</div>

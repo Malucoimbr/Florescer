@@ -24,7 +24,7 @@ class CriancaForm(ModelForm):
         widgets = {
             'nome': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Nome'}),
             'sobrenome': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Sobrenome'}),
-            'data_nascimento': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Data de Nascimento: DD/MM/AA'}),
+            'data_nascimento': forms.DateInput(attrs={'class': 'form-control', 'placeholder': 'Data de Nascimento: DD/MM/AAAA'}),
             'sexo': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Sexo: M/F'}),
             'CEP': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'CEP'}),
             'endereco': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Endereço'}),
