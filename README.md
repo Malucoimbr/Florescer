@@ -44,8 +44,9 @@ Este repositório servirá como um local central para documentar todo o processo
 
 
 <h2>Status Report 1 📦</h2>
+
 ### Quadro do Jira
-(https://github.com/Malucoimbr/Florescer/assets/132527386/af6f03e9-5535-4cbd-b95c-c42ef44a40d1)
+![quadroJiraFlorescer](https://github.com/Malucoimbr/Florescer/assets/132527386/45f2785f-1329-4ba7-9be9-7b72edde6d3f)
 
 ### Histórias 
 [**Histórias: Link para o Drive**](https://drive.google.com/file/d/1l2q2ImR_130QuQoKWwB9QeAK5L9DJvpg/view)
