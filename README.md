@@ -67,7 +67,7 @@ Este repositório servirá como um local central para documentar todo o processo
 [**Screencast do Protótipo Lo-Fi: Link para Youtube**](https://youtu.be/KHJL9BLfxRY)
 
 ### Deploy na Azure
-[**Diagrama de Atividades: Link para o Drive**](http://projeto-florescer.azurewebsites.net)
+[**Deploy na Azure: Link para o Site**](http://projeto-florescer.azurewebsites.net)
 
 ### ScreenCast do Deploy na Azure
 [**ScreenCast do Deploy na Azure: Link para Youtube**](https://youtu.be/BycFX2oa5y0)
