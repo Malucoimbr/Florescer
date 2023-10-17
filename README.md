@@ -52,7 +52,7 @@ Este repositório servirá como um local central para documentar todo o processo
 [**Histórias: Link para o Drive**](https://drive.google.com/file/d/1l2q2ImR_130QuQoKWwB9QeAK5L9DJvpg/view)
 
 ### Relato de Programação em Pares
-[**Relato de Programação em Pares: Link para o Drive**](https://drive.google.com/file/d/1l2q2ImR_130QuQoKWwB9QeAK5L9DJvpg/view)
+[**Relato de Programação em Pares: Link para o Drive**](https://drive.google.com/file/d/1mgYaMHZ36kln-7FSP2qprqsIKZLhimgQ/view)
 
 ### Diagrama de Atividades
 [**Diagrama de Atividades: Link para o Drive**](https://drive.google.com/file/d/1cd-2hDRrtbr2sJ6Pjb6rujyuw9UWV_xV/view)
