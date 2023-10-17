@@ -127,26 +127,3 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-LOGGING = {
- 'version': 1,
- 'disable_existing_loggers': False,
- 'filters': {
- 'require_debug_false': {
- '()': 'django.utils.log.RequireDebugFalse'
- }
- },
- 'handlers': {
- 'logfile': {
- 'class': 'logging.handlers.WatchedFileHandler',
- 'filename': '/tmp/myapp.log'
- }
- },
- 'loggers': {
- 'django': {
- 'handlers': ['logfile'],
- 'level': 'ERROR',
- 'propagate': False,
- }
- }
- }
