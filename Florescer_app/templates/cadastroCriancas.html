@@ -451,7 +451,7 @@ gap: 60px;
 
     <div>
       <form action="" class="form-horizontal form-container" method="POST">
-        {% csrf_token %}
+        
         {{ form.as_p }}
         <input type="submit" value="Cadastrar nova criança" class="btn btn-success">
         <button type="button" onclick="window.location.replace('/inicialAdmin')" class="btn btn-back">Voltar</button>
