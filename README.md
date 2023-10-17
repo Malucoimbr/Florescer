@@ -44,17 +44,29 @@ Este repositório servirá como um local central para documentar todo o processo
 
 
 <h2>Status Report 1 📦</h2>
+### Quadro do Jira
+(https://github.com/Malucoimbr/Florescer/assets/132527386/af6f03e9-5535-4cbd-b95c-c42ef44a40d1)
 
-- histórias: https://drive.google.com/file/d/1l2q2ImR_130QuQoKWwB9QeAK5L9DJvpg/view
-- relato de programação em pares: https://drive.google.com/file/d/1mgYaMHZ36kln-7FSP2qprqsIKZLhimgQ/view
-- diagrama de atividades: https://drive.google.com/file/d/1cd-2hDRrtbr2sJ6Pjb6rujyuw9UWV_xV/view
-- prototipo lofi: https://www.figma.com/file/3FQkst0LvC8XtBnQqS08sl/TELAS-PROT%C3%93TIPO?type=design&node-id=0-1&mode=design&t=2gpObi3BCmEzNHZW-0
-- bugtracker: https://drive.google.com/file/d/1rhJzYSgEJmIoZ6Z1EZ-y_0cy5JOsBjB3/view
+### Histórias 
+[**Histórias: Link para o Drive**](https://drive.google.com/file/d/1l2q2ImR_130QuQoKWwB9QeAK5L9DJvpg/view)
 
-<h3>Relato do Pair Programming</h3>
+### Relato de Programação em Pares
+[**Relato de Programação em Pares: Link para o Drive**](https://drive.google.com/file/d/1l2q2ImR_130QuQoKWwB9QeAK5L9DJvpg/view)
 
-<p>A realização do Pair Programming se deu da seguinte maneira:
+### Diagrama de Atividades
+[**Diagrama de Atividades: Link para o Drive**](https://drive.google.com/file/d/1cd-2hDRrtbr2sJ6Pjb6rujyuw9UWV_xV/view)
 
-Igor Wanderley e Maria Luísa Coimbra  ficaram a cargo de desenvolver e implementar a história de "Cadastrar Crianças", enquanto Maria Júlia Menezes  e Tiago Cavalcanti desenvolveram as maneiras de listagem e implementação da história "Listar Crianças".
+### BugTracker
+[**BugTracker: Link para o Drive**](https://drive.google.com/file/d/1rhJzYSgEJmIoZ6Z1EZ-y_0cy5JOsBjB3/view)
 
-As adaptações e comunicações das views, models e urls com o html e o CSS foi feito em pair programming entre Henrique Lucena e João Victor Ferraz alternando entre piloto e copitolo ao longo do processo.</p>
+### Protótipo Lo-Fi
+[**Protótipo Lo-Fi: Link**](https://www.figma.com/file/3FQkst0LvC8XtBnQqS08sl/TELAS-PROT%C3%93TIPO?type=design&node-id=0-1&mode=design&t=2gpObi3BCmEzNHZW-0)
+
+### Screencast do Protótipo Lo-Fi
+[**Screencast do Protótipo Lo-Fi: Link para Youtube**](https://youtu.be/KHJL9BLfxRY)
+
+### Deploy na Azure
+[**Diagrama de Atividades: Link para o Drive**](http://projeto-florescer.azurewebsites.net)
+
+### ScreenCast do Deploy na Azure
+[**ScreenCast do Deploy na Azure: Link para Youtube**](https://youtu.be/BycFX2oa5y0)
