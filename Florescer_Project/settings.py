@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-from pathlib import Path
+from pathlib import Path, os
 from django.conf.locale.es import formats as es_formats
 
 es_formats.DATETIME_FORMAT = "d M Y H:i:s"
