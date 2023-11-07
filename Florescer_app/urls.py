@@ -6,6 +6,6 @@ urlpatterns = [
     path('cadastroCriancas', views.cadastrarCriancas, name='CadastroCriancas'),
     path('ListarCriancas', views.ListarCriancas, name='ListarCriancas'),
     path('inicialAdmin', views.inicialAdmin, name='inicialAdmin'),
-    path('telapublica', views.telapublica, name='telapublica'),
+    path('', views.telapublica, name='telapublica'),
 
 ]
