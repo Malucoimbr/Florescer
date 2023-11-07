@@ -4,8 +4,11 @@ from .models import Crianca
 from .forms import CriancaForm
 
 
-def home(request):
+def login(request):
     return render(request, './index.html')
+
+def telapublica(request):
+    return render(request, './index_novo.html')
 
 
 def cadastrarCriancas(request):
