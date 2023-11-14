@@ -51,3 +51,6 @@ def listarVoluntario(request):
 
 def inicialAdmin(request):
     return render(request, './inicialAdmin.html')
+
+def doar(request):
+    return render(request, './doar.html')
