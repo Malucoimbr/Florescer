@@ -112,7 +112,6 @@
           <li class="nav-item dropdown">
             <a
               class="nav-link click-scroll dropdown-toggle"
-              href="#section_5"
               id="navbarLightDropdownMenuLink"
               role="button"
               data-bs-toggle="dropdown"
@@ -148,26 +147,24 @@
     <main>
       <section class="volunteer-section section-padding" id="section_4">
         <div class="container">
-          <h2 class="text-white mb-4">Crianças</h2>
+          <h2 class="text-white mb-4">Voluntários</h2>
 
           <table class="table table-bordered testando">
             <thead>
               <tr>
                 <th class="testando">Nome</th>
                 <th>Sexo</th>
-                <th>Responsável</th>
-                <th>Email do Responsável</th>
-                <th>Telefone do Responsável</th>
+                <th>Email</th>
+                <th>Telefone</th>
               </tr>
             </thead>
             <tbody>
-              {% for crianca in lista_criancas %}
+              {% for voluntario in lista_voluntario %}
               <tr>
-                <td>{{ crianca.nome }}</td>
-                <td>{{ crianca.sexo }}</td>
-                <td>{{ crianca.nome_responsavel }}</td>
-                <td>{{ crianca.email_resp }}</td>
-                <td>{{ crianca.telefone_resp }}</td>
+                <td>{{ voluntario.nome }}</td>
+                <td>{{ voluntario.sexo }}</td>
+                <td>{{ voluntario.email }}</td>
+                <td>{{ voluntario.telefone }}</td>
               </tr>
               {% endfor %}
             </tbody>
