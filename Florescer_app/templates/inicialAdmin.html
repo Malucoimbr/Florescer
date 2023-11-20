@@ -124,7 +124,9 @@
               aria-labelledby="navbarLightDropdownMenuLink"
             >
               <li>
-                <a class="dropdown-item" href="news.html">Cadastrar Finanças</a>
+                <a class="dropdown-item" href="cadastroFinanceiro.html"
+                  >Cadastrar Finanças</a
+                >
               </li>
 
               <li>
@@ -147,124 +149,170 @@
     <main>
       <section class="section-padding">
         <div class="container">
-            <div class="row">
-
-                <div class="col-lg-10 col-12 text-center mx-auto">
-                    <h2 class="mb-5">Seja Bem Vindo, Administrador!</h2>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <div class="featured-block d-flex justify-content-center align-items-center">
-                        <a href="donate.html" class="d-block">
-                            <img src="{% static 'images/icons/hands.png' %}" class="featured-block-image img-fluid" alt="">
-
-                            <p class="featured-block-text">Gerando <strong>Impacto</strong></p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-                    <div class="featured-block d-flex justify-content-center align-items-center">
-                        <a href="donate.html" class="d-block">
-                            <img src="{% static 'images/icons/heart.png' %}" class="featured-block-image img-fluid" alt="">
-
-                            <p class="featured-block-text"><strong>Cuide </strong>com Empatia</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-                    <div class="featured-block d-flex justify-content-center align-items-center">
-                        <a href="donate.html" class="d-block">
-                            <img src="{% static 'images/icons/receive.png' %}" class="featured-block-image img-fluid" alt="">
-
-                            <p class="featured-block-text">Inspire com <strong>Amor</strong></p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <div class="featured-block d-flex justify-content-center align-items-center">
-                        <a href="donate.html" class="d-block">
-                            <img src="{% static 'images/icons/scholarship.png' %}" class="featured-block-image img-fluid" alt="">
-
-                            <p class="featured-block-text"><strong>Invista </strong>na Educação</p>
-                        </a>
-                    </div>
-                </div>
-
+          <div class="row">
+            <div class="col-lg-10 col-12 text-center mx-auto">
+              <h2 class="mb-5">Seja Bem Vindo, Administrador!</h2>
             </div>
-        </div>
-    </section>
 
-    <section class="section-padding section-bg" id="section_2">
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+              <div
+                class="featured-block d-flex justify-content-center align-items-center"
+              >
+                <a href="donate.html" class="d-block">
+                  <img
+                    src="{% static 'images/icons/hands.png' %}"
+                    class="featured-block-image img-fluid"
+                    alt=""
+                  />
+
+                  <p class="featured-block-text">
+                    Gerando <strong>Impacto</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+              <div
+                class="featured-block d-flex justify-content-center align-items-center"
+              >
+                <a href="donate.html" class="d-block">
+                  <img
+                    src="{% static 'images/icons/heart.png' %}"
+                    class="featured-block-image img-fluid"
+                    alt=""
+                  />
+
+                  <p class="featured-block-text">
+                    <strong>Cuide </strong>com Empatia
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+              <div
+                class="featured-block d-flex justify-content-center align-items-center"
+              >
+                <a href="donate.html" class="d-block">
+                  <img
+                    src="{% static 'images/icons/receive.png' %}"
+                    class="featured-block-image img-fluid"
+                    alt=""
+                  />
+
+                  <p class="featured-block-text">
+                    Inspire com <strong>Amor</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+              <div
+                class="featured-block d-flex justify-content-center align-items-center"
+              >
+                <a href="donate.html" class="d-block">
+                  <img
+                    src="{% static 'images/icons/scholarship.png' %}"
+                    class="featured-block-image img-fluid"
+                    alt=""
+                  />
+
+                  <p class="featured-block-text">
+                    <strong>Invista </strong>na Educação
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding section-bg" id="section_2">
         <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <img src="{% static 'images/gotas.jpg' %}"
-                        class="custom-text-box-image img-fluid" alt="">
-                </div>
-
-                <div class="col-lg-6 col-12">
-                    <div class="custom-text-box">
-                        <h2 class="mb-2">Nossa História</h2>
-
-                        <h5 class="mb-3">Gotas de Flor com Amor</h5>
-
-                        <p class="mb-0">Cultivando Sonhos. Colhendo Cidadania.</p>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="custom-text-box mb-lg-0">
-                                <h5 class="mb-3">Nossa Missão</h5>
-
-                                <p>Proporcionamos educação e oportunidades para um futuro brilhante</p>
-
-                                <ul class="custom-list mt-2">
-                                    <li class="custom-list-item d-flex">
-                                        <i class="bi-check custom-text-box-icon me-2"></i>
-                                        Alimentação
-                                    </li>
-
-                                    <li class="custom-list-item d-flex">
-                                        <i class="bi-check custom-text-box-icon me-2"></i>
-                                        Terapia Floral
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
-                                <div class="counter-thumb">
-                                    <div class="d-flex">
-                                        <span class="counter-number" data-from="1" data-to="1992"
-                                            data-speed="1000"></span>
-                                        <span class="counter-number-text"></span>
-                                    </div>
-
-                                    <span class="counter-text">Fundado</span>
-                                </div>
-
-                                <div class="counter-thumb mt-4">
-                                    <div class="d-flex">
-                                        <span class="counter-number" data-from="1" data-to="130"
-                                            data-speed="1000"></span>
-                                        <span class="counter-number-text"></span>
-                                    </div>
-
-                                    <span class="counter-text">Crianças e Jovens Atendidos</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+          <div class="row">
+            <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+              <img
+                src="{% static 'images/gotas.jpg' %}"
+                class="custom-text-box-image img-fluid"
+                alt=""
+              />
             </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="custom-text-box">
+                <h2 class="mb-2">Nossa História</h2>
+
+                <h5 class="mb-3">Gotas de Flor com Amor</h5>
+
+                <p class="mb-0">Cultivando Sonhos. Colhendo Cidadania.</p>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="custom-text-box mb-lg-0">
+                    <h5 class="mb-3">Nossa Missão</h5>
+
+                    <p>
+                      Proporcionamos educação e oportunidades para um futuro
+                      brilhante
+                    </p>
+
+                    <ul class="custom-list mt-2">
+                      <li class="custom-list-item d-flex">
+                        <i class="bi-check custom-text-box-icon me-2"></i>
+                        Alimentação
+                      </li>
+
+                      <li class="custom-list-item d-flex">
+                        <i class="bi-check custom-text-box-icon me-2"></i>
+                        Terapia Floral
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div
+                    class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0"
+                  >
+                    <div class="counter-thumb">
+                      <div class="d-flex">
+                        <span
+                          class="counter-number"
+                          data-from="1"
+                          data-to="1992"
+                          data-speed="1000"
+                        ></span>
+                        <span class="counter-number-text"></span>
+                      </div>
+
+                      <span class="counter-text">Fundado</span>
+                    </div>
+
+                    <div class="counter-thumb mt-4">
+                      <div class="d-flex">
+                        <span
+                          class="counter-number"
+                          data-from="1"
+                          data-to="130"
+                          data-speed="1000"
+                        ></span>
+                        <span class="counter-number-text"></span>
+                      </div>
+
+                      <span class="counter-text"
+                        >Crianças e Jovens Atendidos</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
   </body>
 </html>

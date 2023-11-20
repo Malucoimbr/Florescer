@@ -4,6 +4,8 @@ from .models import Crianca
 from .forms import CriancaForm
 from .models import Voluntario
 from .forms import VoluntarioForm
+from .forms import RegistroFinanceiroForm
+from .forms import RegistroFinanceiro
 
 
 def login(request):
@@ -54,3 +56,20 @@ def inicialAdmin(request):
 
 def doar(request):
     return render(request, './doar.html')
+
+def cadastrarRegistroFinanceiro(request):
+    submit = False
+    if request.method == "POST":
+        form = RegistroFinanceiroForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/cadastroFinanceiro?submit=True')
+    else:
+        form = RegistroFinanceiroForm()
+        if 'submit' in request.GET:
+            submit = True
+    return render(request, './cadastroFinanceiro.html', {'form': form, 'submit': submit})
+
+def listarFinancas(request):
+    lista_financas = RegistroFinanceiro.objects.all()
+    return render(request, 'listarFinancas.html', {'lista_financas': lista_financas})

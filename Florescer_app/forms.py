@@ -2,7 +2,7 @@ from django import forms
 from django.forms import ModelForm
 from .models import Crianca
 from .models import Voluntario
-
+from .models import RegistroFinanceiro
 
 class CriancaForm(ModelForm):
     class Meta:
@@ -56,4 +56,16 @@ class VoluntarioForm(ModelForm):
             'endereco': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Endereço'}),
             'email': forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Email'}),
             'telefone': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Telefone: (XX) XXXXX-XXXX'}),
+        }
+
+class RegistroFinanceiroForm(forms.ModelForm):
+    class Meta:
+        model = RegistroFinanceiro
+        fields = "__all__"
+
+        widgets = {
+            'descricao': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Descrição'}),
+            'valor': forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Valor'}),
+            'data': forms.DateInput(attrs={'class': 'form-control', 'placeholder': 'Data', 'type': 'date'}),
+            'tipo': forms.Select(attrs={'class': 'form-control'}),
         }
