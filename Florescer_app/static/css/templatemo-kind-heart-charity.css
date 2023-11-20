@@ -721,7 +721,7 @@ strong {
   overflow: hidden;
 }
 
-.volunteer-section::after {
+/*.volunteer-section::after {
   content: "";
   background: var(--primary-color);
   border-radius: 50%;
@@ -730,7 +730,7 @@ strong {
   right: -80px;
   width: 350px;
   height: 350px;
-}
+}*/
 
 .volunteer-form {
   background: var(--white-color);
