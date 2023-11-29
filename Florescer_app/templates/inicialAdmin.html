@@ -1,318 +1,232 @@
 {% load bootstrap4 %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Florescer</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- CSS FILES -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+  <title>Florescer</title>
 
-    <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet" />
+  <!-- CSS FILES -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
 
-    <link
-      href="{% static 'css/templatemo-kind-heart-charity.css' %}"
-      rel="stylesheet"
-    />
-  </head>
+  <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet" />
 
-  <nav class="navbar navbar-expand-lg bg-light shadow-lg">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="{% static 'images/LogoFlorescer.png' %}"
-          class="logo img-fluid"
-          alt="Florescer"
-        />
-        <span>
-          Florescer
-          <small>soluções em tecnologia</small>
-        </span>
-      </a>
+  <link href="{% static 'css/templatemo-kind-heart-charity.css' %}" rel="stylesheet" />
+</head>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<nav class="navbar navbar-expand-lg bg-light shadow-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="{% static 'images/LogoFlorescer.png' %}" class="logo img-fluid" alt="Florescer" />
+      <span>
+        Florescer
+        <small>soluções em tecnologia</small>
+      </span>
+    </a>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link click-scroll" href="/inicialAdmin">Início</a>
-          </li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link click-scroll dropdown-toggle"
-              id="navbarLightDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >Crianças</a
-            >
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link click-scroll" href="/inicialAdmin">Início</a>
+        </li>
 
-            <ul
-              class="dropdown-menu dropdown-menu-light"
-              aria-labelledby="navbarLightDropdownMenuLink"
-            >
-              <li>
-                <a class="dropdown-item" href="/cadastroCriancas"
-                  >Cadastrar Crianças</a
-                >
-              </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Crianças</a>
 
-              <li>
-                <a class="dropdown-item" href="/ListarCriancas"
-                  >Listar Crianças</a
-                >
-              </li>
-            </ul>
-          </li>
+          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="/cadastroCriancas">Cadastrar Crianças</a>
+            </li>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link click-scroll dropdown-toggle"
-              id="navbarLightDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >Voluntários</a
-            >
+            <li>
+              <a class="dropdown-item" href="/ListarCriancas">Listar Crianças</a>
+            </li>
+          </ul>
+        </li>
 
-            <ul
-              class="dropdown-menu dropdown-menu-light"
-              aria-labelledby="navbarLightDropdownMenuLink"
-            >
-              <li>
-                <a class="dropdown-item" href="/cadastroVoluntario"
-                  >Cadastrar Voluntários</a
-                >
-              </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Voluntários</a>
 
-              <li>
-                <a class="dropdown-item" href="/listarVoluntario"
-                  >Listar Voluntários</a
-                >
-              </li>
-            </ul>
-          </li>
+          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="/cadastroVoluntario">Cadastrar Voluntários</a>
+            </li>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link click-scroll dropdown-toggle"
-              id="navbarLightDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >Financeiro</a
-            >
+            <li>
+              <a class="dropdown-item" href="/listarVoluntario">Listar Voluntários</a>
+            </li>
+          </ul>
+        </li>
 
-            <ul
-              class="dropdown-menu dropdown-menu-light"
-              aria-labelledby="navbarLightDropdownMenuLink"
-            >
-              <li>
-                <a class="dropdown-item" href="/cadastroFinanceiro"
-                  >Cadastrar Finanças</a
-                >
-              </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Financeiro</a>
 
-              <li>
-                <a class="dropdown-item" href="/listarFinancas"
-                  >Visualizar Finanças</a
-                >
-              </li>
-            </ul>
-          </li>
+          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="/cadastroFinanceiro">Cadastrar Finanças</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link click-scroll" href="/">Sair</a>
-          </li>
-        </ul>
-      </div>
+            <li>
+              <a class="dropdown-item" href="/listarFinancas">Visualizar Finanças</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link click-scroll" href="/">Sair</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <body>
-    <main>
-      <section class="section-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 col-12 text-center mx-auto">
-              <h2 class="mb-5">Seja Bem Vindo, Administrador!</h2>
+<body>
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-12 text-center mx-auto">
+            <h2 class="mb-5">Seja Bem Vindo, Administrador!</h2>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+            <div class="featured-block d-flex justify-content-center align-items-center">
+              <a class="d-block">
+                <img src="{% static 'images/icons/hands.png' %}" class="featured-block-image img-fluid" alt="" />
+
+                <p class="featured-block-text">
+                  Gerando <strong>Impacto</strong>
+                </p>
+              </a>
             </div>
+          </div>
 
-            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-              <div
-                class="featured-block d-flex justify-content-center align-items-center"
-              >
-                <a href="donate.html" class="d-block">
-                  <img
-                    src="{% static 'images/icons/hands.png' %}"
-                    class="featured-block-image img-fluid"
-                    alt=""
-                  />
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+            <div class="featured-block d-flex justify-content-center align-items-center">
+              <a class="d-block">
+                <img src="{% static 'images/icons/heart.png' %}" class="featured-block-image img-fluid" alt="" />
 
-                  <p class="featured-block-text">
-                    Gerando <strong>Impacto</strong>
-                  </p>
-                </a>
-              </div>
+                <p class="featured-block-text">
+                  <strong>Cuide </strong>com Empatia
+                </p>
+              </a>
             </div>
+          </div>
 
-            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-              <div
-                class="featured-block d-flex justify-content-center align-items-center"
-              >
-                <a href="donate.html" class="d-block">
-                  <img
-                    src="{% static 'images/icons/heart.png' %}"
-                    class="featured-block-image img-fluid"
-                    alt=""
-                  />
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+            <div class="featured-block d-flex justify-content-center align-items-center">
+              <a class="d-block">
+                <img src="{% static 'images/icons/receive.png' %}" class="featured-block-image img-fluid" alt="" />
 
-                  <p class="featured-block-text">
-                    <strong>Cuide </strong>com Empatia
-                  </p>
-                </a>
-              </div>
+                <p class="featured-block-text">
+                  Inspire com <strong>Amor</strong>
+                </p>
+              </a>
             </div>
+          </div>
 
-            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-              <div
-                class="featured-block d-flex justify-content-center align-items-center"
-              >
-                <a href="donate.html" class="d-block">
-                  <img
-                    src="{% static 'images/icons/receive.png' %}"
-                    class="featured-block-image img-fluid"
-                    alt=""
-                  />
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+            <div class="featured-block d-flex justify-content-center align-items-center">
+              <a class="d-block">
+                <img src="{% static 'images/icons/scholarship.png' %}" class="featured-block-image img-fluid" alt="" />
 
-                  <p class="featured-block-text">
-                    Inspire com <strong>Amor</strong>
-                  </p>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-              <div
-                class="featured-block d-flex justify-content-center align-items-center"
-              >
-                <a href="donate.html" class="d-block">
-                  <img
-                    src="{% static 'images/icons/scholarship.png' %}"
-                    class="featured-block-image img-fluid"
-                    alt=""
-                  />
-
-                  <p class="featured-block-text">
-                    <strong>Invista </strong>na Educação
-                  </p>
-                </a>
-              </div>
+                <p class="featured-block-text">
+                  <strong>Invista </strong>na Educação
+                </p>
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-padding section-bg" id="section_2">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-              <img
-                src="{% static 'images/gotas.jpg' %}"
-                class="custom-text-box-image img-fluid"
-                alt=""
-              />
+    <section class="section-padding section-bg" id="section_2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+            <img src="{% static 'images/gotas.jpg' %}" class="custom-text-box-image img-fluid" alt="" />
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="custom-text-box">
+              <h2 class="mb-2">Nossa História</h2>
+
+              <h5 class="mb-3">Gotas de Flor com Amor</h5>
+
+              <p class="mb-0">Cultivando Sonhos. Colhendo Cidadania.</p>
             </div>
 
-            <div class="col-lg-6 col-12">
-              <div class="custom-text-box">
-                <h2 class="mb-2">Nossa História</h2>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="custom-text-box mb-lg-0">
+                  <h5 class="mb-3">Nossa Missão</h5>
 
-                <h5 class="mb-3">Gotas de Flor com Amor</h5>
+                  <p>
+                    Proporcionamos educação e oportunidades para um futuro
+                    brilhante
+                  </p>
 
-                <p class="mb-0">Cultivando Sonhos. Colhendo Cidadania.</p>
+                  <ul class="custom-list mt-2">
+                    <li class="custom-list-item d-flex">
+                      <i class="bi-check custom-text-box-icon me-2"></i>
+                      Alimentação
+                    </li>
+
+                    <li class="custom-list-item d-flex">
+                      <i class="bi-check custom-text-box-icon me-2"></i>
+                      Terapia Floral
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="custom-text-box mb-lg-0">
-                    <h5 class="mb-3">Nossa Missão</h5>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
+                  <div class="counter-thumb">
+                    <div class="d-flex">
+                      <span class="counter-number" data-from="1" data-to="1992" data-speed="1000"></span>
+                      <span class="counter-number-text"></span>
+                    </div>
 
-                    <p>
-                      Proporcionamos educação e oportunidades para um futuro
-                      brilhante
-                    </p>
-
-                    <ul class="custom-list mt-2">
-                      <li class="custom-list-item d-flex">
-                        <i class="bi-check custom-text-box-icon me-2"></i>
-                        Alimentação
-                      </li>
-
-                      <li class="custom-list-item d-flex">
-                        <i class="bi-check custom-text-box-icon me-2"></i>
-                        Terapia Floral
-                      </li>
-                    </ul>
+                    <span class="counter-text">Fundado</span>
                   </div>
-                </div>
 
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div
-                    class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0"
-                  >
-                    <div class="counter-thumb">
-                      <div class="d-flex">
-                        <span
-                          class="counter-number"
-                          data-from="1"
-                          data-to="1992"
-                          data-speed="1000"
-                        ></span>
-                        <span class="counter-number-text"></span>
-                      </div>
-
-                      <span class="counter-text">Fundado</span>
+                  <div class="counter-thumb mt-4">
+                    <div class="d-flex">
+                      <span class="counter-number" data-from="1" data-to="130" data-speed="1000"></span>
+                      <span class="counter-number-text"></span>
                     </div>
 
-                    <div class="counter-thumb mt-4">
-                      <div class="d-flex">
-                        <span
-                          class="counter-number"
-                          data-from="1"
-                          data-to="130"
-                          data-speed="1000"
-                        ></span>
-                        <span class="counter-number-text"></span>
-                      </div>
-
-                      <span class="counter-text"
-                        >Crianças e Jovens Atendidos</span
-                      >
-                    </div>
+                    <span class="counter-text">Crianças e Jovens Atendidos</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+  <!-- JAVASCRIPT FILES -->
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/jquery.sticky.js"></script>
+  <script src="/static/js/click-scroll.js"></script>
+  <script src="/static/js/counter.js"></script>
+  <script src="/static/js/custom.js"></script>
+</body>
+
 </html>
