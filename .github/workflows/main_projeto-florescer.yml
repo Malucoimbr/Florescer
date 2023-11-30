@@ -2,6 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
+
 name: Build and deploy Python app to Azure Web App - projeto-florescer
 
 on:
@@ -17,11 +18,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Especifique a versão do Node.js desejada
+
       - name: Set up Python version
         uses: actions/setup-python@v2
         with:
           python-version: "3.11"
-          node-version: "16"
 
       - name: Create and start virtual environment
         run: |
