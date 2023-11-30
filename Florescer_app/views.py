@@ -73,3 +73,7 @@ def cadastrarRegistroFinanceiro(request):
 def listarFinancas(request):
     lista_financas = RegistroFinanceiro.objects.all()
     return render(request, 'listarFinancas.html', {'lista_financas': lista_financas})
+
+
+def visualizarDash(request):
+    return render(request, 'visualizardash.html')

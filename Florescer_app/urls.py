@@ -12,4 +12,5 @@ urlpatterns = [
     path('inicialAdmin', views.inicialAdmin, name='inicialAdmin'),
     path('', views.telapublica, name='telapublica'),
     path('doar', views.doar, name='doar'),
+    path('visualizarDash', views.visualizarDash, name='visualizarDash'),
 ]
